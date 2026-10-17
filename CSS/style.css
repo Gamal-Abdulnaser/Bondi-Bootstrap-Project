@@ -1,8 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 :root {
   --dark-color: #19283f;
   --green-color: #33d1cc;
@@ -10,13 +5,9 @@
   --yellow-color: #ffc400;
   --section-color: #eff7fa;
 }
-
 body {
   font-family: "Roboto", sans-serif;
-  height: 10000px;
 }
-
-/* Start Navbar  */
 /* Start Navbar  */
 .navbar {
   background-color: var(--dark-color);
@@ -24,14 +15,10 @@ body {
 .logoo {
   width: 80px;
 }
-/* .navbar-nav a,  .home {
-	color: white !important;
-} */
 
 .navbar .navbar-nav .nav-link {
   color: white;
 }
-
 .navbar .navbar-nav .nav-link.active,
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link:focus {
@@ -40,16 +27,16 @@ body {
 
 .search {
   border-left: 1px solid var(--green-color);
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .navbar .search svg {
   color: var(--green-color);
-	transition: all 0.5s;
+  transition: all 0.5s;
 }
-.navbar .search svg:hover{
-	color: var(--red-color);
-	transform: scale(1.3);
+.navbar .search svg:hover {
+  color: var(--red-color);
+  transform: scale(1.3);
 }
 .navbar .navbar-toggler {
   color: white;
@@ -139,7 +126,7 @@ body {
   width: calc(100% - 10px);
   height: calc(100% - 10px);
   background-color: #33d1cca6;
-	color: white;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -155,33 +142,92 @@ body {
 
 /* End Our Work */
 
-
 /* Start Stuff */
 
-.stuff .description   {
-max-width: 400px;
+.stuff .description {
+  max-width: 400px;
 }
 
-.image img{
+.image img {
   border-radius: 20px;
 }
 /* End Stuff */
 
 /* Start Team */
-.team{
+.team {
   background-color: var(--section-color);
 }
-.team h2{
+.team h2 {
   color: var(--yellow-color);
 }
 
-.team h4{
+.team h4 {
   background-color: var(--green-color);
 }
 /* End Team */
 
 /* Start project */
-.project{
+.project {
   background-color: var(--dark-color);
 }
 /* End project */
+
+/* Start subscribe */
+.subscribe {
+  background-color: var(--yellow-color);
+}
+.subscribe input[type="text"] {
+  border: none;
+  border-bottom: 1px solid white;
+}
+.subscribe input[type="text"]:focus {
+  outline: none;
+}
+.subscribe input::placeholder {
+  color: white;
+}
+
+.subscribe input[type="submit"] {
+  background-color: var(--dark-color);
+  color: var(--yellow-color);
+  /* border: none; */
+}
+/* End subscribe */
+
+/* Start Footer */
+.footer {
+  background-color: var(--dark-color);
+}
+.footer .copyright > span {
+  color: var(--green-color);
+}
+.footer .copyright div span {
+  color: var(--yellow-color);
+}
+.footer .contact ul svg {
+  width: 20px;
+  height: 20px;
+}
+.footer .facebook {
+  background-color: #1877f2;
+}
+.footer .instagram {
+  background-color:  #e1306c ;
+}
+.footer .youtube {
+  background-color:  #ff0000 ;
+}
+.footer .twitch {
+  background-color:  #9146ff ;
+}
+.footer .linkedin {
+  background-color:  #004182 ;
+}
+
+.footer .contact ul li{
+  transition: all 0.5s;
+}
+.footer .contact ul li:hover{
+  transform: translateY(-5px);
+}
+/* End Footer */
